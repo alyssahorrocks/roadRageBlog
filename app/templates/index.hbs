@@ -1,4 +1,7 @@
 {{outlet}}
 
-
-{{#link-to 'about'}}About the Authors{{/link-to}}
+<ul style="list-style: none;">
+  {{#each model as |article|}}
+    {{article-tile article=article}}
+  {{/each}}
+</ul>
