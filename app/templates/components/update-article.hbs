@@ -1,7 +1,7 @@
 {{yield}}
 
-{{#if addNewPost}}
-  <h2 id="newPostHead">New Post</h2>
+{{#if updateArticleForm}}
+  <h2 id="newPostHead">Update Post</h2>
   <div>
     <form>
       <div class="form-group">
@@ -25,9 +25,9 @@
         {{input value=image id="image" class="form-control"}}
       </div>
 
-      <button class="btn btn-submit" {{action 'save'}}>Publish Post</button>
+      <button class="btn btn-submit" {{action 'update' article}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'articleFormShow'}}>New Post</button>
+  <button {{action 'updateArticleForm'}}>Update</button>
 {{/if}}
