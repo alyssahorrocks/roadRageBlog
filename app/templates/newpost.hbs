@@ -1,0 +1,28 @@
+{{outlet}}
+
+<h2>New Post</h2>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Article Title</label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="text">Article:</label>
+      <textarea class="form-control" rows="3" id="textArea">{{input value=text id="text"}}</textarea>
+
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image Link</label>
+      {{input value=image id="image"}}
+    </div>
+
+  </form>
+</div>

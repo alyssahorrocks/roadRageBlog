@@ -1,3 +1,4 @@
 {{yield}}
 
-<li><img src="{{article.image}}"><br>{{article.title}} by {{article.author}}</li>
+<li>{{#link-to 'article' article.id}}<img src="{{article.image}}">{{/link-to}}<br>{{article.title}} by {{article.author}}
+  <button {{action 'delete' article}}>Delete</button></li>
