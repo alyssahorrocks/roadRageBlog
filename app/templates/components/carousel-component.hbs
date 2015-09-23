@@ -2,14 +2,14 @@
   <div class="carousel-inner">
     <div class="active item">
       <figure>
-          <img src="{{articles.firstObject.image}}">
+          <img src="{{currentArticle.image}}">
       </figure>
     </div>
   </div>
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev" {{action 'previousPost'}}>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev" {{action 'previousArticle'}}>
       <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next" {{action 'nextPost'}}>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next" {{action 'nextArticle'}}>
       <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
