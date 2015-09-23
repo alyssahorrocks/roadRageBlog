@@ -1,9 +1,17 @@
 #navbar{
-
+  text-align: center;
   width: 100%;
 }
 
 img {
   height: 40%;
   width: 40%;
+}
+
+#newPostHead {
+  text-align: center;
+}
+
+#homeHead {
+  text-align: center;
 }
