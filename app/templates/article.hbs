@@ -3,3 +3,11 @@
 <h2>{{model.title}} by {{model.author}}</h2>
 
 <p>{{model.text}}</p>
+
+{{#each model.comments as |comment|}}
+  <h2>{{comment.username}}</h2>
+  <p>{{comment.content}}</p>
+{{/each}}
+
+
+{{new-comment model=model saveComment="saveComment"}}

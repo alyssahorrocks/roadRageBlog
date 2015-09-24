@@ -19,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "3.3.5",
     "broccoli-asset-rev": "^2.1.2",
     "ember-bootstrap": "0.4.0",
     "ember-carousel": "0.0.2",

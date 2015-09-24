@@ -1,11 +1,11 @@
 {{outlet}}
 
 Carousel:
-{{carousel-component articles=model numArticles=model.length}}
+<!-- {{carousel-component articles=model numArticles=model.length}} -->
 <hr>
 
 <ul style="list-style: none;">
-  {{#each model as |article|}}
+  {{#each model.articles as |article|}}
       {{article-tile article=article update="update" destroyArticle="destroyArticle"}}
   {{/each}}
 </ul>

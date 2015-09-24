@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('article');
+    return Ember.RSVP.hash({
+      articles: this.store.findAll('article'),
+      comments: this.store.findAll('comment'),
+    });
   },
 
   actions: {
