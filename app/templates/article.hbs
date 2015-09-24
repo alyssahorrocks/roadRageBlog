@@ -7,6 +7,8 @@
 {{#each model.comments as |comment|}}
   <h2>{{comment.username}}</h2>
   <p>{{comment.content}}</p>
+  <button {{action 'deleteComment' comment}}>Delete</button>
+
 {{/each}}
 
 
