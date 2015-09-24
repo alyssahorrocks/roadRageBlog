@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     commentFormShow() {
       this.set('addNewComment', true);
     },
+    update(comment,params) {
+     this.sendAction('update', comment, params);
+   },
     saveComment() {
       var params = {
         username: this.get('username'),

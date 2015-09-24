@@ -8,8 +8,7 @@
   <h2>{{comment.username}}</h2>
   <p>{{comment.content}}</p>
   <button {{action 'deleteComment' comment}}>Delete</button>
-
+  {{update-comment updateCommentForm="updateCommentForm" comment=comment updateComment="updateComment"}}
 {{/each}}
 
-
-{{new-comment model=model saveComment="saveComment"}}
+{{new-comment model=model saveComment="saveComment" }}
