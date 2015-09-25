@@ -1,7 +1,6 @@
 # Blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is a fake blog about travels used to learn and practice with the Ember framework. It gives the user 'crud' functionality with both posted articles and comments on them. 
 
 ## Prerequisites
 
